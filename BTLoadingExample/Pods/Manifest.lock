@@ -1,0 +1,16 @@
+PODS:
+  - BTLoading (0.0.1)
+
+DEPENDENCIES:
+  - BTLoading
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BTLoading
+
+SPEC CHECKSUMS:
+  BTLoading: f9e7f93e71b7d102d231aa4687904271a16cdf33
+
+PODFILE CHECKSUM: 6db0646944905311d2a5748474ae8eff8f3f65cd
+
+COCOAPODS: 1.5.0
