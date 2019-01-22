@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger,BTProgressStyle) {
+    BTProgressStyleLoading=0,
+    BTProgressStyleProgress
+};
+
 @interface BTProgress : UIView
+
++ (void)showLoading:(NSString*)str;
 
 @end

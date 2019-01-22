@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BTLoading"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "An easy Loading View"
   s.homepage         = "https://github.com/StoneMover/BTLoading"
   s.license          = 'MIT'
@@ -8,5 +8,6 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '9.0'
   s.source           = {:git => "https://github.com/StoneMover/BTLoading.git", :tag => s.version }
   s.source_files     = 'Classes/**/*.{h,m}'
+  s.resource = 'Assets/BTLoadingBundle.bundle'
   s.requires_arc     = true
 end

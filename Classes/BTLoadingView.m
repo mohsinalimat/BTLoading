@@ -46,8 +46,8 @@
     self.w=self.frame.size.width;
     self.h=self.frame.size.height;
     self.loadingGif=[UIImage animatedGIFNamed:@"bt_loading_icon"];
-    self.emptyImg=[UIImage imageNamed:@"bt_loading_empty"];;
-    self.errorImg=[UIImage imageNamed:@"bt_loading_error"];
+    self.emptyImg=[self imageBundleName:@"bt_loading_empty"];
+    self.errorImg=[self imageBundleName:@"bt_loading_error"];
     self.loadingStr=@"玩命加载中...";
     self.emptyStr=@"貌似这里什么都没有";
     self.errorInfo=@"似乎断开了与互联网的连接";
@@ -192,7 +192,13 @@
 }
 
 
-
+- (UIImage*)imageBundleName:(NSString*)name{
+    NSString * resourcePath=[[NSBundle mainBundle] resourcePath];
+    NSString * bundlePath=[resourcePath stringByAppendingPathComponent:@"BTLoadingBundle.bundle"];
+    NSString * imgPath=[bundlePath stringByAppendingPathComponent:name];
+    UIImage * img=[[UIImage alloc] initWithContentsOfFile:imgPath];
+    return img;
+}
 
     
 @end

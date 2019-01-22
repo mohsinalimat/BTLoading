@@ -47,15 +47,15 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
 }
 
 + (BTToast*)showSuccess:(NSString*)str{
-    return [self show:str img:[UIImage imageNamed:@"bt_toast_success"]];
+    return [self show:str img:[self imageBundleName:@"bt_toast_success"]];
 }
 
 + (BTToast*)showWarning:(NSString*)str{
-    return [self show:str img:[UIImage imageNamed:@"bt_toast_warning"]];
+    return [self show:str img:[self imageBundleName:@"bt_toast_warning"]];
 }
 
 + (BTToast*)showError:(NSString*)str{
-    return [self show:str img:[UIImage imageNamed:@"bt_toast_error"]];
+    return [self show:str img:[self imageBundleName:@"bt_toast_error"]];
 }
 
 #pragma mark init
@@ -186,6 +186,14 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
 
 - (void)setIsClickInToast:(BOOL)isClickInToast{
     self.userInteractionEnabled=!isClickInToast;
+}
+
++ (UIImage*)imageBundleName:(NSString*)name{
+    NSString * resourcePath=[[NSBundle mainBundle] resourcePath];
+    NSString * bundlePath=[resourcePath stringByAppendingPathComponent:@"BTLoadingBundle.bundle"];
+    NSString * imgPath=[bundlePath stringByAppendingPathComponent:name];
+    UIImage * img=[[UIImage alloc] initWithContentsOfFile:imgPath];
+    return img;
 }
 
 @end
