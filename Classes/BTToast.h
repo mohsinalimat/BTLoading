@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger,BTToastStyle) {
 + (BTToast*)showSuccess:(NSString*)str;
 + (BTToast*)showWarning:(NSString*)str;
 + (BTToast*)showError:(NSString*)str;
++ (BTToast*)showErrorObj:(NSError*)error;
 
 
 //是否可以在Toast的过程中点击屏幕内容，默认可以

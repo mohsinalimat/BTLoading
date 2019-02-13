@@ -38,6 +38,11 @@ typedef void(^BTLoadingBlock)(void);
 -(void)showError:(NSString*)errorStr;
 -(void)showError;
 
+#pragma mark NSError type
+- (void)showErrorObj:(NSError*)error withImg:(UIImage*)img;
+
+- (void)showErrorObj:(NSError*)error;
+
 #pragma mark 消失
 //这里消失以后loading的view仍然在parentView中，如果需要可自己移除
 -(void)dismiss;

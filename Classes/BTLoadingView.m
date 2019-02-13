@@ -171,6 +171,21 @@
     [self showError:self.errorInfo];
 }
 
+#pragma mark NSError type
+- (void)showErrorObj:(NSError*)error withImg:(UIImage*)img{
+    NSString * info=nil;
+    if ([error.userInfo.allKeys containsObject:@"NSLocalizedDescription"]) {
+        info=[error.userInfo objectForKey:@"NSLocalizedDescription"];
+    }else {
+        info=error.domain;
+    }
+    [self showError:info withImg:img];
+}
+
+- (void)showErrorObj:(NSError*)error{
+    [self showErrorObj:error withImg:self.errorImg];
+}
+
 
 -(void)dismiss{
     [self dismiss:YES];

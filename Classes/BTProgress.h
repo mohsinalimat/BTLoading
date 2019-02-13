@@ -15,6 +15,10 @@ typedef NS_ENUM(NSInteger,BTProgressStyle) {
 
 @interface BTProgress : UIView
 
-+ (void)showLoading:(NSString*)str;
++ (BTProgress*)showLoading:(NSString*)str;
++ (BTProgress*)showLoading;
++ (void)hideLoading;
+
+- (void)show:(UIView*)view ;
 
 @end
