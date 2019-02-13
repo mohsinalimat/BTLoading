@@ -6,6 +6,6 @@ target 'BTLoadingExample' do
   # use_frameworks!
 
   # Pods for BTLoadingExample
-  pod 'BTLoading'
+  pod 'BTLoading' , '~>0.0.2'
 
 end

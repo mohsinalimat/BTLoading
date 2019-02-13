@@ -7,6 +7,7 @@
 //
 
 #import "BTToast.h"
+#import "BTLoadingHelp.h"
 
 
 static const CGFloat BT_TOAST_PADDING=12;
@@ -14,7 +15,7 @@ static const CGFloat BT_TOAST_PADDING=12;
 static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
 
 
-@interface BTToast()
+@interface BTToast()<BTLoadingHelpDelegate>
 
 @property (nonatomic, strong) NSString * contentStr;
 
@@ -47,15 +48,25 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
 }
 
 + (BTToast*)showSuccess:(NSString*)str{
-    return [self show:str img:[UIImage imageNamed:@"bt_toast_success"]];
+    return [self show:str img:[self imageBundleName:@"bt_toast_success"]];
 }
 
 + (BTToast*)showWarning:(NSString*)str{
-    return [self show:str img:[UIImage imageNamed:@"bt_toast_warning"]];
+    return [self show:str img:[self imageBundleName:@"bt_toast_warning"]];
 }
 
 + (BTToast*)showError:(NSString*)str{
-    return [self show:str img:[UIImage imageNamed:@"bt_toast_error"]];
+    return [self show:str img:[self imageBundleName:@"bt_toast_error"]];
+}
+
++ (BTToast*)showErrorObj:(NSError*)error{
+    NSString * info=nil;
+    if ([error.userInfo.allKeys containsObject:@"NSLocalizedDescription"]) {
+        info=[error.userInfo objectForKey:@"NSLocalizedDescription"];
+    }else {
+        info=error.domain;
+    }
+    return [self showError:info];
 }
 
 #pragma mark init
@@ -70,8 +81,9 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
 }
 
 - (void)initSelf{
+    [[BTLoadingHelp share]addDelegate:self];
     self.isClickInToast=YES;
-    self.delayDismissTime=2;
+    self.delayDismissTime=1.5;
     [self initRootView];
     [self initLabel];
     [self initImg];
@@ -83,7 +95,7 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
     self.rootView.layer.cornerRadius=5;
     self.rootView.clipsToBounds=YES;
     [self addSubview:self.rootView];
-    self.rootView.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:.5];
+    self.rootView.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:.85];
 }
 
 - (void)initImg{
@@ -99,7 +111,7 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
 - (void)initLabel{
     self.labelContent=[[UILabel alloc] init];
     self.labelContent.textColor=[UIColor whiteColor];
-    self.labelContent.font=[UIFont systemFontOfSize:18 weight:UIFontWeightBold];
+    self.labelContent.font=[UIFont systemFontOfSize:16 weight:UIFontWeightBold];
     self.labelContent.textAlignment=NSTextAlignmentCenter;
     self.labelContent.text=self.contentStr;
     self.labelContent.numberOfLines=0;
@@ -111,6 +123,8 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
     }
     [self.rootView addSubview:self.labelContent];
 }
+
+
 
 #pragma mark 布局
 - (void)layoutSubviews{
@@ -124,7 +138,7 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
     }
     
     self.rootView.frame=CGRectMake(0,0,totalW,totalH);
-    self.rootView.center=CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+    self.rootView.center=CGPointMake(self.frame.size.width/2, (self.frame.size.height-[BTLoadingHelp share].keyboardHeight)/2);
     
     if (self.imgViewType) {
         self.imgViewType.frame=CGRectMake(totalW/2-self.imgViewType.frame.size.width/2,
@@ -163,6 +177,7 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
             [UIView animateWithDuration:.2 animations:^{
                 self.rootView.alpha=0;
             } completion:^(BOOL finished) {
+                [[BTLoadingHelp share]removeDelegate:self];
                 [self removeFromSuperview];
             }];
         });
@@ -186,6 +201,22 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
 
 - (void)setIsClickInToast:(BOOL)isClickInToast{
     self.userInteractionEnabled=!isClickInToast;
+}
+
+
+
+- (void)keyBoradHeightChange{
+    [UIView animateWithDuration:.25 animations:^{
+        self.rootView.center=CGPointMake(self.frame.size.width/2, (self.frame.size.height-[BTLoadingHelp share].keyboardHeight)/2);
+    }];
+}
+
++ (UIImage*)imageBundleName:(NSString*)name{
+    NSString * resourcePath=[[NSBundle mainBundle] resourcePath];
+    NSString * bundlePath=[resourcePath stringByAppendingPathComponent:@"BTLoadingBundle.bundle"];
+    NSString * imgPath=[bundlePath stringByAppendingPathComponent:name];
+    UIImage * img=[[UIImage alloc] initWithContentsOfFile:imgPath];
+    return img;
 }
 
 @end

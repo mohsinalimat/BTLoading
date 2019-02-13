@@ -85,17 +85,20 @@
 
 + (UIImage *)animatedGIFNamed:(NSString *)name {
     CGFloat scale = [UIScreen mainScreen].scale;
-
+    NSString * resourcePath=[[NSBundle mainBundle] resourcePath];
+    NSString * bundlePath=[resourcePath stringByAppendingPathComponent:@"BTLoadingBundle.bundle"];
+    NSBundle * bundle=[NSBundle bundleWithPath:bundlePath];
     if (scale > 1.0f) {
-        NSString *retinaPath = [[NSBundle mainBundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:@"gif"];
-
+        
+        
+        NSString * retinaPath = [bundle pathForResource:[name stringByAppendingString:@"@2x"] ofType:@"gif"];
         NSData *data = [NSData dataWithContentsOfFile:retinaPath];
 
         if (data) {
             return [UIImage animatedGIFWithData:data];
         }
 
-        NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"gif"];
+        NSString *path = [bundle pathForResource:name ofType:@"gif"];
 
         data = [NSData dataWithContentsOfFile:path];
 
@@ -106,7 +109,7 @@
         return [UIImage imageNamed:name];
     }
     else {
-        NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"gif"];
+        NSString *path = [bundle pathForResource:name ofType:@"gif"];
 
         NSData *data = [NSData dataWithContentsOfFile:path];
 
