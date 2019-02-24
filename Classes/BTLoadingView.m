@@ -66,11 +66,10 @@
     self.labelText.font=[UIFont systemFontOfSize:17 weight:UIFontWeightMedium];
     self.labelText.textColor=[UIColor colorWithRed:120/255.0 green:121/255.0 blue:122/255.0 alpha:1];
     [self addSubview:self.labelText];
-    NSLayoutConstraint * centerX=[NSLayoutConstraint constraintWithItem:self.labelText attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0];
-    
     NSLayoutConstraint * centerY=[NSLayoutConstraint constraintWithItem:self.labelText attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1 constant:-20];
-    [self addConstraint:centerX];
-    [self addConstraint:centerY];
+    NSLayoutConstraint * left=[NSLayoutConstraint constraintWithItem:self.labelText attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:40];
+    NSLayoutConstraint * right=[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.labelText attribute:NSLayoutAttributeRight multiplier:1 constant:40];
+    [self addConstraints:@[centerY,left,right]];
 }
 
 - (void)createImg{

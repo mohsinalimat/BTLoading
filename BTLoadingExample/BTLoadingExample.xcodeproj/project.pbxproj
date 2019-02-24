@@ -189,7 +189,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample-resources.sh",
 				"${PODS_ROOT}/BTLoading/Assets/BTLoadingBundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -200,7 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

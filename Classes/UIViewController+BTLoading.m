@@ -34,6 +34,7 @@ static const char BTLoadingHelpKey;
     self.loadingHelp.block = ^{
         [weakSelf reload];
     };
+    self.loadingHelp.autoresizingMask=UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.loadingHelp];
     if(isLoading){
         [self showLoading];
