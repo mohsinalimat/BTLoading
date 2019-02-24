@@ -12,9 +12,14 @@
 		9B78C68F22229EC7007A02C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B78C68E22229EC7007A02C1 /* Assets.xcassets */; };
 		9B78C69222229EC7007A02C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B78C69022229EC7007A02C1 /* LaunchScreen.storyboard */; };
 		9B78C69522229EC7007A02C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B78C69422229EC7007A02C1 /* main.m */; };
-		9B78C69C22229EEC007A02C1 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 9B78C69B22229EEC007A02C1 /* Classes */; };
-		9B78C69E22229EF8007A02C1 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 9B78C69D22229EF8007A02C1 /* Assets */; };
 		9B78C6A422229F72007A02C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B78C6A322229F72007A02C1 /* ViewController.m */; };
+		9B78C7062222D453007A02C1 /* BTLoadingHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B78C6FE2222D453007A02C1 /* BTLoadingHelp.m */; };
+		9B78C7072222D453007A02C1 /* BTToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B78C6FF2222D453007A02C1 /* BTToast.m */; };
+		9B78C7082222D453007A02C1 /* UIViewController+BTLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B78C7002222D453007A02C1 /* UIViewController+BTLoading.m */; };
+		9B78C7092222D453007A02C1 /* BTProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B78C7012222D453007A02C1 /* BTProgress.m */; };
+		9B78C70A2222D453007A02C1 /* BTLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B78C7022222D453007A02C1 /* BTLoadingView.m */; };
+		9B78C70B2222D453007A02C1 /* UIImage+BTGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B78C7032222D453007A02C1 /* UIImage+BTGIF.m */; };
+		9B78C70C2222D453007A02C1 /* BTLoadingBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B78C7052222D453007A02C1 /* BTLoadingBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +31,22 @@
 		9B78C69122229EC7007A02C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B78C69322229EC7007A02C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B78C69422229EC7007A02C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9B78C69B22229EEC007A02C1 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Classes; path = ../../Classes; sourceTree = "<group>"; };
-		9B78C69D22229EF8007A02C1 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		9B78C6A222229F72007A02C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9B78C6A322229F72007A02C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B78C6F82222D453007A02C1 /* BTToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTToast.h; sourceTree = "<group>"; };
+		9B78C6F92222D453007A02C1 /* BTLoadingHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLoadingHelp.h; sourceTree = "<group>"; };
+		9B78C6FA2222D453007A02C1 /* UIViewController+BTLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BTLoading.h"; sourceTree = "<group>"; };
+		9B78C6FB2222D453007A02C1 /* BTLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLoadingView.h; sourceTree = "<group>"; };
+		9B78C6FC2222D453007A02C1 /* UIImage+BTGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BTGIF.h"; sourceTree = "<group>"; };
+		9B78C6FD2222D453007A02C1 /* BTProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTProgress.h; sourceTree = "<group>"; };
+		9B78C6FE2222D453007A02C1 /* BTLoadingHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLoadingHelp.m; sourceTree = "<group>"; };
+		9B78C6FF2222D453007A02C1 /* BTToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTToast.m; sourceTree = "<group>"; };
+		9B78C7002222D453007A02C1 /* UIViewController+BTLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BTLoading.m"; sourceTree = "<group>"; };
+		9B78C7012222D453007A02C1 /* BTProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTProgress.m; sourceTree = "<group>"; };
+		9B78C7022222D453007A02C1 /* BTLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLoadingView.m; sourceTree = "<group>"; };
+		9B78C7032222D453007A02C1 /* UIImage+BTGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BTGIF.m"; sourceTree = "<group>"; };
+		9B78C7052222D453007A02C1 /* BTLoadingBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTLoadingBundle.bundle; sourceTree = "<group>"; };
+		9B78C70D2222D496007A02C1 /* BTLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTLoading.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +79,8 @@
 		9B78C68422229EC6007A02C1 /* BTLoadingTest */ = {
 			isa = PBXGroup;
 			children = (
-				9B78C69D22229EF8007A02C1 /* Assets */,
-				9B78C69B22229EEC007A02C1 /* Classes */,
+				9B78C7042222D453007A02C1 /* Assets */,
+				9B78C6F72222D453007A02C1 /* Classes */,
 				9B78C68522229EC6007A02C1 /* AppDelegate.h */,
 				9B78C68622229EC6007A02C1 /* AppDelegate.m */,
 				9B78C6A222229F72007A02C1 /* ViewController.h */,
@@ -75,6 +92,36 @@
 				9B78C69422229EC7007A02C1 /* main.m */,
 			);
 			path = BTLoadingTest;
+			sourceTree = "<group>";
+		};
+		9B78C6F72222D453007A02C1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9B78C6F82222D453007A02C1 /* BTToast.h */,
+				9B78C6F92222D453007A02C1 /* BTLoadingHelp.h */,
+				9B78C6FA2222D453007A02C1 /* UIViewController+BTLoading.h */,
+				9B78C6FB2222D453007A02C1 /* BTLoadingView.h */,
+				9B78C6FC2222D453007A02C1 /* UIImage+BTGIF.h */,
+				9B78C6FD2222D453007A02C1 /* BTProgress.h */,
+				9B78C6FE2222D453007A02C1 /* BTLoadingHelp.m */,
+				9B78C6FF2222D453007A02C1 /* BTToast.m */,
+				9B78C7002222D453007A02C1 /* UIViewController+BTLoading.m */,
+				9B78C7012222D453007A02C1 /* BTProgress.m */,
+				9B78C7022222D453007A02C1 /* BTLoadingView.m */,
+				9B78C7032222D453007A02C1 /* UIImage+BTGIF.m */,
+				9B78C70D2222D496007A02C1 /* BTLoading.h */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		9B78C7042222D453007A02C1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9B78C7052222D453007A02C1 /* BTLoadingBundle.bundle */,
+			);
+			name = Assets;
+			path = ../../Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +181,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B78C69E22229EF8007A02C1 /* Assets in Resources */,
+				9B78C70C2222D453007A02C1 /* BTLoadingBundle.bundle in Resources */,
 				9B78C69222229EC7007A02C1 /* LaunchScreen.storyboard in Resources */,
-				9B78C69C22229EEC007A02C1 /* Classes in Resources */,
 				9B78C68F22229EC7007A02C1 /* Assets.xcassets in Resources */,
 				9B78C68D22229EC6007A02C1 /* Main.storyboard in Resources */,
 			);
@@ -149,9 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B78C7072222D453007A02C1 /* BTToast.m in Sources */,
+				9B78C70A2222D453007A02C1 /* BTLoadingView.m in Sources */,
+				9B78C7092222D453007A02C1 /* BTProgress.m in Sources */,
 				9B78C6A422229F72007A02C1 /* ViewController.m in Sources */,
+				9B78C70B2222D453007A02C1 /* UIImage+BTGIF.m in Sources */,
 				9B78C69522229EC7007A02C1 /* main.m in Sources */,
 				9B78C68722229EC6007A02C1 /* AppDelegate.m in Sources */,
+				9B78C7062222D453007A02C1 /* BTLoadingHelp.m in Sources */,
+				9B78C7082222D453007A02C1 /* UIViewController+BTLoading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
