@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B61A265223A541E00A209A5 /* BTLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTLoading.h; sourceTree = "<group>"; };
 		9B78C68222229EC6007A02C1 /* BTLoadingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTLoadingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B78C68522229EC6007A02C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B78C68622229EC6007A02C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		9B78C7022222D453007A02C1 /* BTLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLoadingView.m; sourceTree = "<group>"; };
 		9B78C7032222D453007A02C1 /* UIImage+BTGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BTGIF.m"; sourceTree = "<group>"; };
 		9B78C7052222D453007A02C1 /* BTLoadingBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTLoadingBundle.bundle; sourceTree = "<group>"; };
-		9B78C70D2222D496007A02C1 /* BTLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTLoading.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 				9B78C7012222D453007A02C1 /* BTProgress.m */,
 				9B78C7022222D453007A02C1 /* BTLoadingView.m */,
 				9B78C7032222D453007A02C1 /* UIImage+BTGIF.m */,
-				9B78C70D2222D496007A02C1 /* BTLoading.h */,
+				9B61A265223A541E00A209A5 /* BTLoading.h */,
 			);
 			name = Classes;
 			path = ../../Classes;
