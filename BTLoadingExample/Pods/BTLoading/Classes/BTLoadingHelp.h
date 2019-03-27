@@ -28,6 +28,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<BTLoadingHelpDelegate> delegate;
 
+@property (nonatomic, strong) NSString * loadingStr;
+
+@property (nonatomic, strong) NSString * emptyStr;
+
+@property (nonatomic, strong) NSString * errorInfo;
+
+@property (nonatomic, strong) NSString * loadingGif;
+
+@property (nonatomic, strong) NSString * emptyImg;
+
+@property (nonatomic, strong) NSString * errorImg;
+
 - (UIImage*)imageBundleName:(NSString*)name;
 
 @end

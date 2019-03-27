@@ -83,9 +83,9 @@
     return frameDuration;
 }
 
-+ (UIImage *)animatedGIFNamed:(NSString *)name {
++ (UIImage *)animatedGIFNamed:(NSString *)name bundle:(NSBundle*)b{
     CGFloat scale = [UIScreen mainScreen].scale;
-    NSString * resourcePath=[[NSBundle mainBundle] resourcePath];
+    NSString * resourcePath=[b resourcePath];
     NSString * bundlePath=[resourcePath stringByAppendingPathComponent:@"BTLoadingBundle.bundle"];
     NSBundle * bundle=[NSBundle bundleWithPath:bundlePath];
     if (scale > 1.0f) {

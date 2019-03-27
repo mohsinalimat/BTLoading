@@ -47,7 +47,7 @@
     self.backgroundColor=[UIColor whiteColor];
     self.w=self.frame.size.width;
     self.h=self.frame.size.height;
-    self.loadingGif=[UIImage animatedGIFNamed:[BTLoadingHelp share].loadingGif];
+    self.loadingGif=[UIImage animatedGIFNamed:[BTLoadingHelp share].loadingGif bundle:[NSBundle bundleForClass:[self class]]];
     self.emptyImg=[[BTLoadingHelp share]imageBundleName:[BTLoadingHelp share].emptyImg];
     self.errorImg=[[BTLoadingHelp share] imageBundleName:[BTLoadingHelp share].errorImg];
     self.loadingStr=[BTLoadingHelp share].loadingStr;
