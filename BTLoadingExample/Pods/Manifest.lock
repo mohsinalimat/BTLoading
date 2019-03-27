@@ -1,5 +1,5 @@
 PODS:
-  - BTLoading (0.0.6)
+  - BTLoading (0.0.7)
 
 DEPENDENCIES:
   - BTLoading
@@ -9,7 +9,7 @@ SPEC REPOS:
     - BTLoading
 
 SPEC CHECKSUMS:
-  BTLoading: 964a3854947327d3ef5851f5a0e4d65147ce8409
+  BTLoading: b8098be0bd14e117db913c2d730c39512279a6fc
 
 PODFILE CHECKSUM: ee5b5ebb4e9722549fa91891e2ea4e449065cd0f
 

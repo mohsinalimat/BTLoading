@@ -96,8 +96,7 @@ static BTLoadingHelp * help=nil;
 
 - (UIImage*)imageBundleName:(NSString*)name{
     NSBundle * bundle = [NSBundle bundleForClass:[self class]];
-    NSString * path = [NSString stringWithFormat:@"BTLoadingBundle.bundle/%@",name];
-    UIImage * img = [UIImage imageNamed:path inBundle:bundle compatibleWithTraitCollection:nil];
+    UIImage * img = [UIImage imageNamed:[NSString stringWithFormat:@"BTLoadingBundle.bundle/%@",name] inBundle:bundle compatibleWithTraitCollection:nil];
     return img;
 }
 
