@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeDelegate:(id)delegate;
 
 @property (nonatomic, weak) id<BTLoadingHelpDelegate> delegate;
+
+- (UIImage*)imageBundleName:(NSString*)name;
 
 @end
 

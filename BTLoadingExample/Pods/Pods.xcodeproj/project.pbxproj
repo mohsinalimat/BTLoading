@@ -7,209 +7,245 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		135575C6D48F9EE7D60C5CEACB67E72C /* BTLoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = F864ED5D5A119FCE2691F734DCD6193A /* BTLoadingView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		34BF136A4C6D042EB7F69A30FA8B2234 /* BTLoading-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CED6BA409EBF7D56CA5E6CD15D8120AC /* BTLoading-dummy.m */; };
-		52F6BB4C636E44C5083E8D18433306EB /* Pods-BTLoadingExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B92D3B802D106DEC43E5268E7109D2 /* Pods-BTLoadingExample-dummy.m */; };
-		72AB4B2732AE80928BA0CB31450F0064 /* BTLoadingHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0580C25F9B3A64749DB320297AD4A0 /* BTLoadingHelp.m */; };
-		7C2FE5AA7FF2B06ED9FF8D3B156696D1 /* UIImage+BTGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 896CC61625CE97F0DEA0B752E8A4DD85 /* UIImage+BTGIF.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		97C932DB2C758BBB204603B8933AD85F /* UIViewController+BTLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 98181D6092E304157E8E4A48BD1ADED2 /* UIViewController+BTLoading.m */; };
-		99D470394AEDB805C3D7562A62EF0886 /* BTToast.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1F1F8D9EE705BC585BD5FD8A01D419 /* BTToast.m */; };
-		A08D426F31EED316915A4533186C20A7 /* UIImage+BTGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 103AB32041028209D168B787D02B9DF5 /* UIImage+BTGIF.m */; };
-		AE580C7D8414C3EF09DE8DEAB2D4D8DD /* BTProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B1C81ABD0E56648579C8854B2F2DCD /* BTProgress.m */; };
-		BA34AE1BBF9A6CBD0DAC83237171E781 /* BTLoadingHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D63AB19CEBF0792D1D9B61F348D10E /* BTLoadingHelp.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BBCCD186C6C38DAC01E288E1053BB7B3 /* BTToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D8DD5B32252DFF188E63496D2DBEA4 /* BTToast.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CB7FC3DA67574D69DAEF345E8330E4CB /* BTProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CE36C08ADB4256D096DB41FD3545A2 /* BTProgress.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D21E40E023265A53AFEB1C74E5F3BD3D /* BTLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CC34AF6B1D7F8B31BC9CFE5712B870 /* BTLoadingView.m */; };
-		E9FDC85911433F9EA8BF61A69C6526F3 /* UIViewController+BTLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = E291C24D41C21F533EB0628407388CE2 /* UIViewController+BTLoading.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		02A3C556C622D02FB3E00A8BC8C7BC95 /* BTToast.m in Sources */ = {isa = PBXBuildFile; fileRef = BACA2EC822D7FF42E778B897C15D6A81 /* BTToast.m */; };
+		02E245A8A793FA28BDBE23F3A4340A60 /* BTLoadingHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = B18280E5CD6D26C040F878898D9E3E99 /* BTLoadingHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25F4A3A99FF835974A404FFB6134A88C /* Pods-BTLoadingExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6D6703244ACDF596621B8112909CFB /* Pods-BTLoadingExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FF369A5B5F318A478B6CEF54A223F0F /* UIViewController+BTLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B8EC331D143011D1DFCD964115DBEB /* UIViewController+BTLoading.m */; };
+		42FB99DFCE6553D15FF8DEB8AF081B11 /* BTLoading-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE65B0A3EA25D0458C0AABD46DC37F43 /* BTLoading-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44422CAD6D4BF0CD1732FA24AC03FC09 /* BTLoadingBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA7739C06B0D469B7BCB49912C4769FE /* BTLoadingBundle.bundle */; };
+		4602AC4C9997F147A2D8C631D2A2F277 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		6EAA4B230850DB6DE9E5ADF75358E266 /* UIViewController+BTLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D2F61818F27EC4A0BAD3CFA703A8BF /* UIViewController+BTLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79C783DECF61389CDA81FD72386290FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		7CC80BC18D4C8DCB99FDB05E0A4D0F74 /* UIImage+BTGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = F2794590A0CFDD063B8091CD7D976016 /* UIImage+BTGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85D9A80E961E1D6F2AAEDA70155A6C59 /* Pods-BTLoadingExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E79829F22F55A1DE9418541793EF1E21 /* Pods-BTLoadingExample-dummy.m */; };
+		89CC97291B66ED80CA0357403449B757 /* BTLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD2B33905065BE2187BEEA9309A770 /* BTLoadingView.m */; };
+		9D50C833DC8BBD314C4AFC5079493BB1 /* BTLoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD858FF40595EB31F163C6E0118A0E3 /* BTLoadingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E6F040C0B8B56FCE3B14D21F22E2C44 /* BTLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 397CB20A8B56A66F6489BAC5A78F011D /* BTLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD8BA8660DDF6EAE06818F6A5FF39731 /* BTLoading-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 094D27C6F7BA8D715EBC5D900C80C914 /* BTLoading-dummy.m */; };
+		CEDFD9BCC4C8D2F0BB7CFD397F3AF259 /* BTProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CD19206257508FF8CF42AA097112F6B /* BTProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBF44D8F2C9EB8A945615DF9DBD295BE /* BTProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BD6ED5CB214EA651ADA069A147290 /* BTProgress.m */; };
+		DDF88AFE818BABB6657CD805E0BA42F4 /* BTLoadingHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 907EED55B799FBDE00B027750444C3CF /* BTLoadingHelp.m */; };
+		E72D50D193DEBAB4B6147D3EE2EB8D5D /* UIImage+BTGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD63F7614BC44B1B93F16CEEFCF6F50 /* UIImage+BTGIF.m */; };
+		EB1C26F2099FC8A6F9DCA148FADD9873 /* BTToast.h in Headers */ = {isa = PBXBuildFile; fileRef = D896F59272480D40A5F171A9057A003A /* BTToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		72ABCADB9B0EC49A89EDB3DE838A5B1B /* PBXContainerItemProxy */ = {
+		EB8E33D5D3E976B69493BB64EE542314 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6C0F650B00D84B0E268F4FEE3DF44859;
+			remoteGlobalIDString = B13591E46B2CF0E1F3C90D6EF884EF70;
 			remoteInfo = BTLoading;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		103AB32041028209D168B787D02B9DF5 /* UIImage+BTGIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BTGIF.m"; path = "Classes/UIImage+BTGIF.m"; sourceTree = "<group>"; };
-		13CE36C08ADB4256D096DB41FD3545A2 /* BTProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTProgress.h; path = Classes/BTProgress.h; sourceTree = "<group>"; };
-		18CC34AF6B1D7F8B31BC9CFE5712B870 /* BTLoadingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTLoadingView.m; path = Classes/BTLoadingView.m; sourceTree = "<group>"; };
-		22D8DD5B32252DFF188E63496D2DBEA4 /* BTToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTToast.h; path = Classes/BTToast.h; sourceTree = "<group>"; };
-		2AE6221F09E1E13DDD7B28919367BE4E /* Pods-BTLoadingExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BTLoadingExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		44521366FF32EF15E7A75FB25B3734E2 /* Pods-BTLoadingExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BTLoadingExample-resources.sh"; sourceTree = "<group>"; };
-		48D63AB19CEBF0792D1D9B61F348D10E /* BTLoadingHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTLoadingHelp.h; path = Classes/BTLoadingHelp.h; sourceTree = "<group>"; };
-		7073B240758CF98C4468DB9FC29B0996 /* BTLoading.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BTLoading.xcconfig; sourceTree = "<group>"; };
-		7949C823F04353F2828440DBA3147567 /* Pods-BTLoadingExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BTLoadingExample.release.xcconfig"; sourceTree = "<group>"; };
-		7F8655A069152ED6E0DB947259DB2295 /* BTLoading-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTLoading-prefix.pch"; sourceTree = "<group>"; };
-		896CC61625CE97F0DEA0B752E8A4DD85 /* UIImage+BTGIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+BTGIF.h"; path = "Classes/UIImage+BTGIF.h"; sourceTree = "<group>"; };
-		8B21DC5755A3EDAE0F358464A986505D /* Pods-BTLoadingExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BTLoadingExample.debug.xcconfig"; sourceTree = "<group>"; };
-		98181D6092E304157E8E4A48BD1ADED2 /* UIViewController+BTLoading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BTLoading.m"; path = "Classes/UIViewController+BTLoading.m"; sourceTree = "<group>"; };
+		094D27C6F7BA8D715EBC5D900C80C914 /* BTLoading-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BTLoading-dummy.m"; sourceTree = "<group>"; };
+		11DDFCD0ABAA7EC08945541416A1667D /* Pods-BTLoadingExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BTLoadingExample-frameworks.sh"; sourceTree = "<group>"; };
+		397CB20A8B56A66F6489BAC5A78F011D /* BTLoading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTLoading.h; path = Classes/BTLoading.h; sourceTree = "<group>"; };
+		59B8EC331D143011D1DFCD964115DBEB /* UIViewController+BTLoading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BTLoading.m"; path = "Classes/UIViewController+BTLoading.m"; sourceTree = "<group>"; };
+		6A0DE78B9249B003EDBF94380A01D6DC /* BTLoading-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BTLoading-Info.plist"; sourceTree = "<group>"; };
+		6A2B4CEC23D03A0430DDE951D5BDE2BD /* Pods_BTLoadingExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BTLoadingExample.framework; path = "Pods-BTLoadingExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC7B616315CD65B7340F02AD8A0DDF6 /* Pods-BTLoadingExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BTLoadingExample.debug.xcconfig"; sourceTree = "<group>"; };
+		765BD6ED5CB214EA651ADA069A147290 /* BTProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTProgress.m; path = Classes/BTProgress.m; sourceTree = "<group>"; };
+		80D2F61818F27EC4A0BAD3CFA703A8BF /* UIViewController+BTLoading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BTLoading.h"; path = "Classes/UIViewController+BTLoading.h"; sourceTree = "<group>"; };
+		8BDD2B33905065BE2187BEEA9309A770 /* BTLoadingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTLoadingView.m; path = Classes/BTLoadingView.m; sourceTree = "<group>"; };
+		8CC911913BFE57CE6AA8396133125C5F /* BTLoading-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTLoading-prefix.pch"; sourceTree = "<group>"; };
+		8EB178C56CEB36B80DCD019104D42955 /* Pods-BTLoadingExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BTLoadingExample-Info.plist"; sourceTree = "<group>"; };
+		907EED55B799FBDE00B027750444C3CF /* BTLoadingHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTLoadingHelp.m; path = Classes/BTLoadingHelp.m; sourceTree = "<group>"; };
+		9CD19206257508FF8CF42AA097112F6B /* BTProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTProgress.h; path = Classes/BTProgress.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A4B1C81ABD0E56648579C8854B2F2DCD /* BTProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTProgress.m; path = Classes/BTProgress.m; sourceTree = "<group>"; };
-		AC48A0D10283E93F8D6BC52077ABA65D /* libPods-BTLoadingExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BTLoadingExample.a"; path = "libPods-BTLoadingExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD0580C25F9B3A64749DB320297AD4A0 /* BTLoadingHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTLoadingHelp.m; path = Classes/BTLoadingHelp.m; sourceTree = "<group>"; };
-		AD1F1F8D9EE705BC585BD5FD8A01D419 /* BTToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTToast.m; path = Classes/BTToast.m; sourceTree = "<group>"; };
-		CED6BA409EBF7D56CA5E6CD15D8120AC /* BTLoading-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BTLoading-dummy.m"; sourceTree = "<group>"; };
-		D5A92E849D496A75D007BA54E57A86C8 /* BTLoadingBundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = BTLoadingBundle.bundle; path = Assets/BTLoadingBundle.bundle; sourceTree = "<group>"; };
-		D6114BF3AAD3815FE030399F14DF9B4D /* libBTLoading.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBTLoading.a; path = libBTLoading.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D80064CF52AD54554BB8305FA20CDE1F /* Pods-BTLoadingExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BTLoadingExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E291C24D41C21F533EB0628407388CE2 /* UIViewController+BTLoading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BTLoading.h"; path = "Classes/UIViewController+BTLoading.h"; sourceTree = "<group>"; };
-		F0B92D3B802D106DEC43E5268E7109D2 /* Pods-BTLoadingExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BTLoadingExample-dummy.m"; sourceTree = "<group>"; };
-		F864ED5D5A119FCE2691F734DCD6193A /* BTLoadingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTLoadingView.h; path = Classes/BTLoadingView.h; sourceTree = "<group>"; };
+		A88CA93FC9FE49F95CF09B47FA15153B /* BTLoading.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BTLoading.modulemap; sourceTree = "<group>"; };
+		AFD63F7614BC44B1B93F16CEEFCF6F50 /* UIImage+BTGIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BTGIF.m"; path = "Classes/UIImage+BTGIF.m"; sourceTree = "<group>"; };
+		B18280E5CD6D26C040F878898D9E3E99 /* BTLoadingHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTLoadingHelp.h; path = Classes/BTLoadingHelp.h; sourceTree = "<group>"; };
+		B33E5A820854C016987E63C74989D4CD /* BTLoading.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BTLoading.xcconfig; sourceTree = "<group>"; };
+		B61FBEFEC9AED625B5C710A41F7CBC7E /* BTLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BTLoading.framework; path = BTLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACA2EC822D7FF42E778B897C15D6A81 /* BTToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTToast.m; path = Classes/BTToast.m; sourceTree = "<group>"; };
+		BE65B0A3EA25D0458C0AABD46DC37F43 /* BTLoading-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTLoading-umbrella.h"; sourceTree = "<group>"; };
+		C421636134E792E90C2E162C22941479 /* Pods-BTLoadingExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BTLoadingExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CB741218BAE4793A6269457E5D84538B /* Pods-BTLoadingExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BTLoadingExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D896F59272480D40A5F171A9057A003A /* BTToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTToast.h; path = Classes/BTToast.h; sourceTree = "<group>"; };
+		D9B1F72F8AF9834A01D4FCA776B13172 /* Pods-BTLoadingExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BTLoadingExample.release.xcconfig"; sourceTree = "<group>"; };
+		DBD858FF40595EB31F163C6E0118A0E3 /* BTLoadingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTLoadingView.h; path = Classes/BTLoadingView.h; sourceTree = "<group>"; };
+		DE44A71E8EF10393F375951551DE591C /* Pods-BTLoadingExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BTLoadingExample.modulemap"; sourceTree = "<group>"; };
+		E79829F22F55A1DE9418541793EF1E21 /* Pods-BTLoadingExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BTLoadingExample-dummy.m"; sourceTree = "<group>"; };
+		EA6D6703244ACDF596621B8112909CFB /* Pods-BTLoadingExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BTLoadingExample-umbrella.h"; sourceTree = "<group>"; };
+		EA7739C06B0D469B7BCB49912C4769FE /* BTLoadingBundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = BTLoadingBundle.bundle; path = Assets/BTLoadingBundle.bundle; sourceTree = "<group>"; };
+		F2794590A0CFDD063B8091CD7D976016 /* UIImage+BTGIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+BTGIF.h"; path = "Classes/UIImage+BTGIF.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		013676AABD04DD5F4EE2B656B0895975 /* Frameworks */ = {
+		5E1FC6B78C5D0603E207B5FBF24C2642 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C783DECF61389CDA81FD72386290FD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC9DAFA9037F4C9A711A761ECD47D06E /* Frameworks */ = {
+		601EE7DAC372ECB08AA09C18506162E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4602AC4C9997F147A2D8C631D2A2F277 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		172755E5A77B3AEEB9BB2BE781F325F3 /* Products */ = {
+		077B800D2DAC18D9EAFF58332D2984F8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D6114BF3AAD3815FE030399F14DF9B4D /* libBTLoading.a */,
-				AC48A0D10283E93F8D6BC52077ABA65D /* libPods-BTLoadingExample.a */,
+				5857EFA9A507B84C71656B802FAD3370 /* Pods-BTLoadingExample */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		34CEB6C5FAD158828453D7F1A3231E50 /* Pods-BTLoadingExample */ = {
+		4BBF22332EB36DD128AD436AC8F231D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D80064CF52AD54554BB8305FA20CDE1F /* Pods-BTLoadingExample-acknowledgements.markdown */,
-				2AE6221F09E1E13DDD7B28919367BE4E /* Pods-BTLoadingExample-acknowledgements.plist */,
-				F0B92D3B802D106DEC43E5268E7109D2 /* Pods-BTLoadingExample-dummy.m */,
-				44521366FF32EF15E7A75FB25B3734E2 /* Pods-BTLoadingExample-resources.sh */,
-				8B21DC5755A3EDAE0F358464A986505D /* Pods-BTLoadingExample.debug.xcconfig */,
-				7949C823F04353F2828440DBA3147567 /* Pods-BTLoadingExample.release.xcconfig */,
+				EA7739C06B0D469B7BCB49912C4769FE /* BTLoadingBundle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5857EFA9A507B84C71656B802FAD3370 /* Pods-BTLoadingExample */ = {
+			isa = PBXGroup;
+			children = (
+				DE44A71E8EF10393F375951551DE591C /* Pods-BTLoadingExample.modulemap */,
+				CB741218BAE4793A6269457E5D84538B /* Pods-BTLoadingExample-acknowledgements.markdown */,
+				C421636134E792E90C2E162C22941479 /* Pods-BTLoadingExample-acknowledgements.plist */,
+				E79829F22F55A1DE9418541793EF1E21 /* Pods-BTLoadingExample-dummy.m */,
+				11DDFCD0ABAA7EC08945541416A1667D /* Pods-BTLoadingExample-frameworks.sh */,
+				8EB178C56CEB36B80DCD019104D42955 /* Pods-BTLoadingExample-Info.plist */,
+				EA6D6703244ACDF596621B8112909CFB /* Pods-BTLoadingExample-umbrella.h */,
+				6AC7B616315CD65B7340F02AD8A0DDF6 /* Pods-BTLoadingExample.debug.xcconfig */,
+				D9B1F72F8AF9834A01D4FCA776B13172 /* Pods-BTLoadingExample.release.xcconfig */,
 			);
 			name = "Pods-BTLoadingExample";
 			path = "Target Support Files/Pods-BTLoadingExample";
 			sourceTree = "<group>";
 		};
-		3B752F97270EA145194A9FBC6CDAC063 /* Support Files */ = {
+		74C563D4ACF6D4E97BC7A6D26D2B171C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7073B240758CF98C4468DB9FC29B0996 /* BTLoading.xcconfig */,
-				CED6BA409EBF7D56CA5E6CD15D8120AC /* BTLoading-dummy.m */,
-				7F8655A069152ED6E0DB947259DB2295 /* BTLoading-prefix.pch */,
+				B61FBEFEC9AED625B5C710A41F7CBC7E /* BTLoading.framework */,
+				6A2B4CEC23D03A0430DDE951D5BDE2BD /* Pods_BTLoadingExample.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/BTLoading";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		4238754BC72C1DCF092D15BA44C7E3D9 /* Pods */ = {
+		992F0F64F14A502036192910E0CB5590 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CFF89495154407753906D501560450AD /* BTLoading */,
+				E9B8DEE24819D654E6BD8460DEA80C53 /* BTLoading */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		79DFA3F1250337446F185FB0DCA6551E /* Resources */ = {
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D5A92E849D496A75D007BA54E57A86C8 /* BTLoadingBundle.bundle */,
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
 			);
-			name = Resources;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A61DEB6DED0546926F81A33B154089B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A88CA93FC9FE49F95CF09B47FA15153B /* BTLoading.modulemap */,
+				B33E5A820854C016987E63C74989D4CD /* BTLoading.xcconfig */,
+				094D27C6F7BA8D715EBC5D900C80C914 /* BTLoading-dummy.m */,
+				6A0DE78B9249B003EDBF94380A01D6DC /* BTLoading-Info.plist */,
+				8CC911913BFE57CE6AA8396133125C5F /* BTLoading-prefix.pch */,
+				BE65B0A3EA25D0458C0AABD46DC37F43 /* BTLoading-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BTLoading";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				4238754BC72C1DCF092D15BA44C7E3D9 /* Pods */,
-				172755E5A77B3AEEB9BB2BE781F325F3 /* Products */,
-				FA4F829BB9DD3ECF53D91E73EAE1537F /* Targets Support Files */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				992F0F64F14A502036192910E0CB5590 /* Pods */,
+				74C563D4ACF6D4E97BC7A6D26D2B171C /* Products */,
+				077B800D2DAC18D9EAFF58332D2984F8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		CFF89495154407753906D501560450AD /* BTLoading */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48D63AB19CEBF0792D1D9B61F348D10E /* BTLoadingHelp.h */,
-				AD0580C25F9B3A64749DB320297AD4A0 /* BTLoadingHelp.m */,
-				F864ED5D5A119FCE2691F734DCD6193A /* BTLoadingView.h */,
-				18CC34AF6B1D7F8B31BC9CFE5712B870 /* BTLoadingView.m */,
-				13CE36C08ADB4256D096DB41FD3545A2 /* BTProgress.h */,
-				A4B1C81ABD0E56648579C8854B2F2DCD /* BTProgress.m */,
-				22D8DD5B32252DFF188E63496D2DBEA4 /* BTToast.h */,
-				AD1F1F8D9EE705BC585BD5FD8A01D419 /* BTToast.m */,
-				896CC61625CE97F0DEA0B752E8A4DD85 /* UIImage+BTGIF.h */,
-				103AB32041028209D168B787D02B9DF5 /* UIImage+BTGIF.m */,
-				E291C24D41C21F533EB0628407388CE2 /* UIViewController+BTLoading.h */,
-				98181D6092E304157E8E4A48BD1ADED2 /* UIViewController+BTLoading.m */,
-				79DFA3F1250337446F185FB0DCA6551E /* Resources */,
-				3B752F97270EA145194A9FBC6CDAC063 /* Support Files */,
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9B8DEE24819D654E6BD8460DEA80C53 /* BTLoading */ = {
+			isa = PBXGroup;
+			children = (
+				397CB20A8B56A66F6489BAC5A78F011D /* BTLoading.h */,
+				B18280E5CD6D26C040F878898D9E3E99 /* BTLoadingHelp.h */,
+				907EED55B799FBDE00B027750444C3CF /* BTLoadingHelp.m */,
+				DBD858FF40595EB31F163C6E0118A0E3 /* BTLoadingView.h */,
+				8BDD2B33905065BE2187BEEA9309A770 /* BTLoadingView.m */,
+				9CD19206257508FF8CF42AA097112F6B /* BTProgress.h */,
+				765BD6ED5CB214EA651ADA069A147290 /* BTProgress.m */,
+				D896F59272480D40A5F171A9057A003A /* BTToast.h */,
+				BACA2EC822D7FF42E778B897C15D6A81 /* BTToast.m */,
+				F2794590A0CFDD063B8091CD7D976016 /* UIImage+BTGIF.h */,
+				AFD63F7614BC44B1B93F16CEEFCF6F50 /* UIImage+BTGIF.m */,
+				80D2F61818F27EC4A0BAD3CFA703A8BF /* UIViewController+BTLoading.h */,
+				59B8EC331D143011D1DFCD964115DBEB /* UIViewController+BTLoading.m */,
+				4BBF22332EB36DD128AD436AC8F231D4 /* Resources */,
+				A61DEB6DED0546926F81A33B154089B9 /* Support Files */,
 			);
 			name = BTLoading;
 			path = BTLoading;
 			sourceTree = "<group>";
 		};
-		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FA4F829BB9DD3ECF53D91E73EAE1537F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				34CEB6C5FAD158828453D7F1A3231E50 /* Pods-BTLoadingExample */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9E32664A4432E60BAC525A68325694D0 /* Headers */ = {
+		4BCB907A9C29FD83541F9F82CEB566AA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FB99DFCE6553D15FF8DEB8AF081B11 /* BTLoading-umbrella.h in Headers */,
+				9E6F040C0B8B56FCE3B14D21F22E2C44 /* BTLoading.h in Headers */,
+				02E245A8A793FA28BDBE23F3A4340A60 /* BTLoadingHelp.h in Headers */,
+				9D50C833DC8BBD314C4AFC5079493BB1 /* BTLoadingView.h in Headers */,
+				CEDFD9BCC4C8D2F0BB7CFD397F3AF259 /* BTProgress.h in Headers */,
+				EB1C26F2099FC8A6F9DCA148FADD9873 /* BTToast.h in Headers */,
+				7CC80BC18D4C8DCB99FDB05E0A4D0F74 /* UIImage+BTGIF.h in Headers */,
+				6EAA4B230850DB6DE9E5ADF75358E266 /* UIViewController+BTLoading.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3C825721681127B24C6C571E10DB812 /* Headers */ = {
+		BD2421CEE9ED32B123822EA5F9AEC020 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA34AE1BBF9A6CBD0DAC83237171E781 /* BTLoadingHelp.h in Headers */,
-				135575C6D48F9EE7D60C5CEACB67E72C /* BTLoadingView.h in Headers */,
-				CB7FC3DA67574D69DAEF345E8330E4CB /* BTProgress.h in Headers */,
-				BBCCD186C6C38DAC01E288E1053BB7B3 /* BTToast.h in Headers */,
-				7C2FE5AA7FF2B06ED9FF8D3B156696D1 /* UIImage+BTGIF.h in Headers */,
-				E9FDC85911433F9EA8BF61A69C6526F3 /* UIViewController+BTLoading.h in Headers */,
+				25F4A3A99FF835974A404FFB6134A88C /* Pods-BTLoadingExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6C0F650B00D84B0E268F4FEE3DF44859 /* BTLoading */ = {
+		B13591E46B2CF0E1F3C90D6EF884EF70 /* BTLoading */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6FE8BD7754C1B319FA64ADD88BAA83A /* Build configuration list for PBXNativeTarget "BTLoading" */;
+			buildConfigurationList = 0768496EA8A1754776EDC900334B6CED /* Build configuration list for PBXNativeTarget "BTLoading" */;
 			buildPhases = (
-				B3C825721681127B24C6C571E10DB812 /* Headers */,
-				8AEC9BA40C1AA11A6CE2BDF8B316AB00 /* Sources */,
-				CC9DAFA9037F4C9A711A761ECD47D06E /* Frameworks */,
+				4BCB907A9C29FD83541F9F82CEB566AA /* Headers */,
+				892B4688D59D471C40CA7ED2D9871859 /* Sources */,
+				601EE7DAC372ECB08AA09C18506162E9 /* Frameworks */,
+				BA6E661F0AF7F35CCAAF7BDF81D37313 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -217,26 +253,27 @@
 			);
 			name = BTLoading;
 			productName = BTLoading;
-			productReference = D6114BF3AAD3815FE030399F14DF9B4D /* libBTLoading.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = B61FBEFEC9AED625B5C710A41F7CBC7E /* BTLoading.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		9C6608192B42F181F2F3C939397EDA76 /* Pods-BTLoadingExample */ = {
+		D913184F2CC655EACF9070FE5A510E8E /* Pods-BTLoadingExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F196D2C18CD68D7D9D06E6CF8C42543F /* Build configuration list for PBXNativeTarget "Pods-BTLoadingExample" */;
+			buildConfigurationList = 1FCEAE6BD88CBF334C36CACCDAFAA9BC /* Build configuration list for PBXNativeTarget "Pods-BTLoadingExample" */;
 			buildPhases = (
-				9E32664A4432E60BAC525A68325694D0 /* Headers */,
-				A898B87D1C89ACE3FE26EBCCBA8DB2A4 /* Sources */,
-				013676AABD04DD5F4EE2B656B0895975 /* Frameworks */,
+				BD2421CEE9ED32B123822EA5F9AEC020 /* Headers */,
+				18762556D6B010C176C8988C4DECD4E9 /* Sources */,
+				5E1FC6B78C5D0603E207B5FBF24C2642 /* Frameworks */,
+				A6E78C8C48BBF297276650B12F95C298 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BA26E18EB3CE5154AC9435805AB639CD /* PBXTargetDependency */,
+				0227EEBF9DBB52364E72AB743D0BC789 /* PBXTargetDependency */,
 			);
 			name = "Pods-BTLoadingExample";
 			productName = "Pods-BTLoadingExample";
-			productReference = AC48A0D10283E93F8D6BC52077ABA65D /* libPods-BTLoadingExample.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 6A2B4CEC23D03A0430DDE951D5BDE2BD /* Pods_BTLoadingExample.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -255,95 +292,175 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 172755E5A77B3AEEB9BB2BE781F325F3 /* Products */;
+			productRefGroup = 74C563D4ACF6D4E97BC7A6D26D2B171C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C0F650B00D84B0E268F4FEE3DF44859 /* BTLoading */,
-				9C6608192B42F181F2F3C939397EDA76 /* Pods-BTLoadingExample */,
+				B13591E46B2CF0E1F3C90D6EF884EF70 /* BTLoading */,
+				D913184F2CC655EACF9070FE5A510E8E /* Pods-BTLoadingExample */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		8AEC9BA40C1AA11A6CE2BDF8B316AB00 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		A6E78C8C48BBF297276650B12F95C298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34BF136A4C6D042EB7F69A30FA8B2234 /* BTLoading-dummy.m in Sources */,
-				72AB4B2732AE80928BA0CB31450F0064 /* BTLoadingHelp.m in Sources */,
-				D21E40E023265A53AFEB1C74E5F3BD3D /* BTLoadingView.m in Sources */,
-				AE580C7D8414C3EF09DE8DEAB2D4D8DD /* BTProgress.m in Sources */,
-				99D470394AEDB805C3D7562A62EF0886 /* BTToast.m in Sources */,
-				A08D426F31EED316915A4533186C20A7 /* UIImage+BTGIF.m in Sources */,
-				97C932DB2C758BBB204603B8933AD85F /* UIViewController+BTLoading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A898B87D1C89ACE3FE26EBCCBA8DB2A4 /* Sources */ = {
+		BA6E661F0AF7F35CCAAF7BDF81D37313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44422CAD6D4BF0CD1732FA24AC03FC09 /* BTLoadingBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18762556D6B010C176C8988C4DECD4E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F6BB4C636E44C5083E8D18433306EB /* Pods-BTLoadingExample-dummy.m in Sources */,
+				85D9A80E961E1D6F2AAEDA70155A6C59 /* Pods-BTLoadingExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892B4688D59D471C40CA7ED2D9871859 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8BA8660DDF6EAE06818F6A5FF39731 /* BTLoading-dummy.m in Sources */,
+				DDF88AFE818BABB6657CD805E0BA42F4 /* BTLoadingHelp.m in Sources */,
+				89CC97291B66ED80CA0357403449B757 /* BTLoadingView.m in Sources */,
+				DBF44D8F2C9EB8A945615DF9DBD295BE /* BTProgress.m in Sources */,
+				02A3C556C622D02FB3E00A8BC8C7BC95 /* BTToast.m in Sources */,
+				E72D50D193DEBAB4B6147D3EE2EB8D5D /* UIImage+BTGIF.m in Sources */,
+				3FF369A5B5F318A478B6CEF54A223F0F /* UIViewController+BTLoading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BA26E18EB3CE5154AC9435805AB639CD /* PBXTargetDependency */ = {
+		0227EEBF9DBB52364E72AB743D0BC789 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BTLoading;
-			target = 6C0F650B00D84B0E268F4FEE3DF44859 /* BTLoading */;
-			targetProxy = 72ABCADB9B0EC49A89EDB3DE838A5B1B /* PBXContainerItemProxy */;
+			target = B13591E46B2CF0E1F3C90D6EF884EF70 /* BTLoading */;
+			targetProxy = EB8E33D5D3E976B69493BB64EE542314 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		634F58EAF46517A9F40DB201595CD8B1 /* Debug */ = {
+		30E17853D980144471F3287ECC8C7606 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B21DC5755A3EDAE0F358464A986505D /* Pods-BTLoadingExample.debug.xcconfig */;
+			baseConfigurationReference = 6AC7B616315CD65B7340F02AD8A0DDF6 /* Pods-BTLoadingExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		81A75176AAC6FD7C837EEEADC4FDADCF /* Release */ = {
+		5EA6764B5EE675E18289AE91B3E398B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7949C823F04353F2828440DBA3147567 /* Pods-BTLoadingExample.release.xcconfig */;
+			baseConfigurationReference = B33E5A820854C016987E63C74989D4CD /* BTLoading.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BTLoading/BTLoading-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BTLoading/BTLoading-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BTLoading/BTLoading.modulemap";
+				PRODUCT_MODULE_NAME = BTLoading;
+				PRODUCT_NAME = BTLoading;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		7BD3C6A964E0193191EC0200E96DF4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B33E5A820854C016987E63C74989D4CD /* BTLoading.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BTLoading/BTLoading-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BTLoading/BTLoading-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BTLoading/BTLoading.modulemap";
+				PRODUCT_MODULE_NAME = BTLoading;
+				PRODUCT_NAME = BTLoading;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -405,27 +522,42 @@
 			};
 			name = Release;
 		};
-		B19C0320491375018BE84DDCD27DA261 /* Release */ = {
+		ADCBCBA9372F3EA266FB0EC7C900C519 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7073B240758CF98C4468DB9FC29B0996 /* BTLoading.xcconfig */;
+			baseConfigurationReference = D9B1F72F8AF9834A01D4FCA776B13172 /* Pods-BTLoadingExample.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/BTLoading/BTLoading-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = BTLoading;
-				PRODUCT_NAME = BTLoading;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -493,55 +625,32 @@
 			};
 			name = Debug;
 		};
-		EEE030009C7034D452727BB83F271E32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7073B240758CF98C4468DB9FC29B0996 /* BTLoading.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/BTLoading/BTLoading-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = BTLoading;
-				PRODUCT_NAME = BTLoading;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0768496EA8A1754776EDC900334B6CED /* Build configuration list for PBXNativeTarget "BTLoading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD3C6A964E0193191EC0200E96DF4D4 /* Debug */,
+				5EA6764B5EE675E18289AE91B3E398B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FCEAE6BD88CBF334C36CACCDAFAA9BC /* Build configuration list for PBXNativeTarget "Pods-BTLoadingExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E17853D980144471F3287ECC8C7606 /* Debug */,
+				ADCBCBA9372F3EA266FB0EC7C900C519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1391485F05B41BD35738A433056B7FA /* Debug */,
 				A105C1752A0A49B30ED621B71E226CDB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A6FE8BD7754C1B319FA64ADD88BAA83A /* Build configuration list for PBXNativeTarget "BTLoading" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EEE030009C7034D452727BB83F271E32 /* Debug */,
-				B19C0320491375018BE84DDCD27DA261 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F196D2C18CD68D7D9D06E6CF8C42543F /* Build configuration list for PBXNativeTarget "Pods-BTLoadingExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				634F58EAF46517A9F40DB201595CD8B1 /* Debug */,
-				81A75176AAC6FD7C837EEEADC4FDADCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94C75EFA5E3B3CD5A084CD63 /* libPods-BTLoadingExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E72305FA299F014BCC87C944 /* libPods-BTLoadingExample.a */; };
 		9B63E7EA21F4BD42006B371C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63E7E921F4BD42006B371C /* AppDelegate.m */; };
 		9B63E7ED21F4BD42006B371C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63E7EC21F4BD42006B371C /* ViewController.m */; };
 		9B63E7F021F4BD42006B371C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B63E7EE21F4BD42006B371C /* Main.storyboard */; };
 		9B63E7F221F4BD44006B371C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B63E7F121F4BD44006B371C /* Assets.xcassets */; };
 		9B63E7F521F4BD44006B371C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B63E7F321F4BD44006B371C /* LaunchScreen.storyboard */; };
 		9B63E7F821F4BD44006B371C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63E7F721F4BD44006B371C /* main.m */; };
+		AC7972EF51F9C2DC2FDB8ABC /* Pods_BTLoadingExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75275E833954F6D406B930D /* Pods_BTLoadingExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 		9B63E7F621F4BD44006B371C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B63E7F721F4BD44006B371C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5465D43462FA23285F0A188 /* Pods-BTLoadingExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTLoadingExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample.debug.xcconfig"; sourceTree = "<group>"; };
-		E72305FA299F014BCC87C944 /* libPods-BTLoadingExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BTLoadingExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75275E833954F6D406B930D /* Pods_BTLoadingExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTLoadingExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9988069D3861229846F1D8A /* Pods-BTLoadingExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTLoadingExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94C75EFA5E3B3CD5A084CD63 /* libPods-BTLoadingExample.a in Frameworks */,
+				AC7972EF51F9C2DC2FDB8ABC /* Pods_BTLoadingExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		3B276E1C56734959C42D457E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E72305FA299F014BCC87C944 /* libPods-BTLoadingExample.a */,
+				C75275E833954F6D406B930D /* Pods_BTLoadingExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 				9B63E7E121F4BD42006B371C /* Sources */,
 				9B63E7E221F4BD42006B371C /* Frameworks */,
 				9B63E7E321F4BD42006B371C /* Resources */,
-				B1B4DB2852528ECC593352CD /* [CP] Copy Pods Resources */,
+				ACAE97BE0C1D1C9A99713081 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,7 +181,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B1B4DB2852528ECC593352CD /* [CP] Copy Pods Resources */ = {
+		ACAE97BE0C1D1C9A99713081 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,18 +189,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample-resources.sh",
-				"${PODS_ROOT}/BTLoading/Assets/BTLoadingBundle.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BTLoading/BTLoading.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BTLoadingBundle.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BTLoading.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTLoadingExample/Pods-BTLoadingExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
