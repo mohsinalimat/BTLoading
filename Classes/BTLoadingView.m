@@ -187,6 +187,13 @@
     [self showErrorObj:error withImg:self.errorImg];
 }
 
+- (void)showError:(NSError*)error errorStr:(NSString*)errorStr{
+    if (error) {
+        [self showErrorObj:error];
+    }else{
+        [self showError:errorStr];
+    }
+}
 
 -(void)dismiss{
     [self dismiss:YES];

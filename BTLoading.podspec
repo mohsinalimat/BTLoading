@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BTLoading"
-  s.version          = "0.0.8"
+  s.version          = "0.0.9"
   s.summary          = "An easy Loading View"
   s.homepage         = "https://github.com/StoneMover/BTLoading"
   s.license          = 'MIT'
