@@ -70,7 +70,7 @@
             [BTToast showWarning:@"请输入正确的手机号码，后面的文字是为了增加字符串的长度加上去的了"];
             break;
         case 3:
-            [BTToast showError:@"暂无此账号"];
+            [BTToast showErrorInfo:@"暂无此账号"];
             break;
         case 4:
         {

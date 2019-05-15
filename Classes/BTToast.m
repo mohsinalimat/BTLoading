@@ -55,8 +55,8 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
     return [self show:str img:[[BTLoadingConfig share]imageBundleName:@"bt_toast_warning"]];
 }
 
-+ (BTToast*)showError:(NSString*)str{
-    return [self show:str img:[[BTLoadingConfig share]imageBundleName:@"bt_toast_error"]];
++ (BTToast*)showErrorInfo:(NSString*)info{
+    return [self show:info img:[[BTLoadingConfig share]imageBundleName:@"bt_toast_error"]];
 }
 
 + (BTToast*)showErrorObj:(NSError*)error{
@@ -66,7 +66,15 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
     }else {
         info=error.domain;
     }
-    return [self showError:info];
+    return [self showErrorInfo:info];
+}
+
++ (BTToast*)showErrorObj:(NSError *)error errorInfo:(NSString*)errorInfo{
+    if (error) {
+        return [self showErrorObj:error];
+    }else{
+        return [self showErrorInfo:errorInfo];
+    }
 }
 
 #pragma mark init
@@ -182,11 +190,11 @@ static const CGFloat BT_TOAST_IMG_LABEL_TOP=5;
             }];
         });
     }];
-//    [UIView animateWithDuration:.5 animations:^{
-//
-//    } completion:^(BOOL finished) {
-//
-//    }];
+    //    [UIView animateWithDuration:.5 animations:^{
+    //
+    //    } completion:^(BOOL finished) {
+    //
+    //    }];
     
     
 }
