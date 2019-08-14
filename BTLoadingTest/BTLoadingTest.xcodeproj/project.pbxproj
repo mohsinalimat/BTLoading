@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		602E02D42304083700DA4E13 /* TestEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E02D32304083700DA4E13 /* TestEmptyView.m */; };
+		605406532302B77400A681EA /* BTLoadingSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 605406522302B77400A681EA /* BTLoadingSubView.m */; };
 		9B78C68722229EC6007A02C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B78C68622229EC6007A02C1 /* AppDelegate.m */; };
 		9B78C68D22229EC6007A02C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B78C68B22229EC6007A02C1 /* Main.storyboard */; };
 		9B78C68F22229EC7007A02C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B78C68E22229EC7007A02C1 /* Assets.xcassets */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		602E02D22304083700DA4E13 /* TestEmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEmptyView.h; sourceTree = "<group>"; };
+		602E02D32304083700DA4E13 /* TestEmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEmptyView.m; sourceTree = "<group>"; };
+		605406512302B77400A681EA /* BTLoadingSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTLoadingSubView.h; sourceTree = "<group>"; };
+		605406522302B77400A681EA /* BTLoadingSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTLoadingSubView.m; sourceTree = "<group>"; };
 		9B61A265223A541E00A209A5 /* BTLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTLoading.h; sourceTree = "<group>"; };
 		9B78C68222229EC6007A02C1 /* BTLoadingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTLoadingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B78C68522229EC6007A02C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +96,8 @@
 				9B78C69022229EC7007A02C1 /* LaunchScreen.storyboard */,
 				9B78C69322229EC7007A02C1 /* Info.plist */,
 				9B78C69422229EC7007A02C1 /* main.m */,
+				602E02D22304083700DA4E13 /* TestEmptyView.h */,
+				602E02D32304083700DA4E13 /* TestEmptyView.m */,
 			);
 			path = BTLoadingTest;
 			sourceTree = "<group>";
@@ -110,6 +118,8 @@
 				9B78C7002222D453007A02C1 /* UIViewController+BTLoading.m */,
 				9B78C6FB2222D453007A02C1 /* BTLoadingView.h */,
 				9B78C7022222D453007A02C1 /* BTLoadingView.m */,
+				605406512302B77400A681EA /* BTLoadingSubView.h */,
+				605406522302B77400A681EA /* BTLoadingSubView.m */,
 			);
 			name = Classes;
 			path = ../../Classes;
@@ -197,9 +207,11 @@
 			files = (
 				9B78C7072222D453007A02C1 /* BTToast.m in Sources */,
 				9B78C70A2222D453007A02C1 /* BTLoadingView.m in Sources */,
+				605406532302B77400A681EA /* BTLoadingSubView.m in Sources */,
 				9B78C7092222D453007A02C1 /* BTProgress.m in Sources */,
 				9B78C6A422229F72007A02C1 /* ViewController.m in Sources */,
 				9B78C70B2222D453007A02C1 /* UIImage+BTGIF.m in Sources */,
+				602E02D42304083700DA4E13 /* TestEmptyView.m in Sources */,
 				9B78C69522229EC7007A02C1 /* main.m in Sources */,
 				9B78C68722229EC6007A02C1 /* AppDelegate.m in Sources */,
 				9B78C7062222D453007A02C1 /* BTLoadingConfig.m in Sources */,

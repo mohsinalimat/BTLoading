@@ -10,6 +10,8 @@
 #import "BTToast.h"
 #import "UIViewController+BTLoading.h"
 #import "BTProgress.h"
+#import "BTLoadingConfig.h"
+#import "TestEmptyView.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -22,6 +24,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    [BTLoadingConfig share].customEmptyViewBlock = ^BTLoadingSubView *{
+//        TestEmptyView * emptyView =[[TestEmptyView alloc] initWithFrame:CGRectZero];
+//        emptyView.backgroundColor=UIColor.lightGrayColor;
+//        return emptyView;
+//    };
+    
     self.title=@"BTLoading";
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
@@ -37,10 +46,12 @@
                   ];
     
     //    [self.tableView registerNib:[UINib nibWithNibName:@"UITableViewCell" bundle:nil] forCellReuseIdentifier:@"UITableViewCellId"];
-    [self initLoading];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self dismiss];
-    });
+//    [self initLoading];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self showEmpty];
+//    });
+    
+    
 }
 
 
@@ -70,7 +81,7 @@
             [BTToast showWarning:@"请输入正确的手机号码，后面的文字是为了增加字符串的长度加上去的了"];
             break;
         case 3:
-            [BTToast showErrorInfo:@"暂无此账号"];
+            [BTToast showErrorInfo:@"1"];
             break;
         case 4:
         {
